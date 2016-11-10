@@ -4,3 +4,5 @@ A docker image with Ansible and Oracle Java 8
 
 > docker push strawpay/ansible-java8
 
+docker run strawpay/ansible-java8 java -version
+docker run strawpay/ansible-java8 ansible --version
