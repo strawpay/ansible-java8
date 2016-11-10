@@ -19,5 +19,5 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886 && apt-get
 
 RUN pip install --upgrade pip
 
-RUN pip install ansible==2.1.1.0
+RUN pip install ansible==2.1.2.0
 
