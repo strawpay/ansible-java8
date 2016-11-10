@@ -1,10 +1,10 @@
 #!/bin/sh -e
 
-docker build -t strawpay/ansible-java8 .
-docker push strawpay/ansible-java8
+docker build -t strawpay/ansible-java .
+docker push strawpay/ansible-java
 
-docker run --rm strawpay/ansible-java8 ansible --version 
-docker run --rm strawpay/ansible-java8 java -version
+docker run --rm strawpay/ansible-java ansible --version 
+docker run --rm strawpay/ansible-java java -version
 
-echo "docker tag strawpay/ansible-java8 strawpay/ansible-java8:{version}_{version}"
-echo "docker push strawpay/ansible-java8:{version}_{version}"
+echo "docker tag strawpay/ansible-java strawpay/ansible-java:{version}-{version}"
+echo "docker push strawpay/ansible-java:{version}-{version}"
